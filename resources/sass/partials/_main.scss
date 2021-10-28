@@ -1,0 +1,20 @@
+main {
+    .container-front {
+        height: calc(100vh - 90px);
+        background-color: lightgray;
+        // background-image: url(../images/bg.jpeg);
+        display: flex;
+        flex-wrap: wrap;
+        .container-movie {
+            margin: auto;
+            height: 250px;
+            width: calc(100% / 5 - 30px);
+            border: 1px solid black;
+            @include centerColumn();
+            .title {
+                font-weight: 800;
+                margin: 4px;
+            }
+        }
+    }
+}
